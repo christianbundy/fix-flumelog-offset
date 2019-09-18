@@ -8,7 +8,8 @@ file and then replacing your flumelog with the contents of that file.
 
 ## Usage
 
-```javascript
+```console
+$ fix-flumelog-offset --help
 Usage: fix-flumelog-offset [options]
 
 Options:
