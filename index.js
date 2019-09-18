@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const flume = require('flumedb')
 const log = require('flumelog-offset')
 const os = require('os')

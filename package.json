@@ -16,5 +16,8 @@
     "yargs": "^14.0.0"
   },
   "repository": "git@github.com:fraction/fix-flumelog-offset.git",
-  "private": false
+  "private": false,
+  "bin": {
+    "fix-flumelog-offset": "./index.js"
+  }
 }
