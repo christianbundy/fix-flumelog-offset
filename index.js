@@ -9,8 +9,11 @@ const mv = require('mv')
 
 const yargs = require('yargs')
 
+// Messsages weren't published in the future.
 const max = Date.now()
-const min = 1398910373926
+
+// They weren't published before Scuttlebutt was created either.
+const min = 1438787024567 // %SABuw7mOMKT5E8g6vp7ZZl8cqJfsIPPF44QpFE6p6sA=.sha256
 
 const config = yargs
   .usage('Usage: $0 [options]')
