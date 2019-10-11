@@ -1,6 +1,6 @@
 {
   "name": "fix-flumelog-offset",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "repair flumelog offset to remove corrupt entries",
   "main": "index.js",
   "scripts": {
