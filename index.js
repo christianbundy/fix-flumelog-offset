@@ -6,6 +6,7 @@ const os = require('os')
 const path = require('path')
 const pull = require('pull-stream')
 const mv = require('mv')
+const crypto = require('crypto')
 
 const yargs = require('yargs')
 
@@ -38,9 +39,10 @@ const createDb = (file) =>
     }
   }))
 
+const rand = crypto.randomByte(32).toString('hex')
 const paths = {
   db: config.path,
-  tmp: '/tmp/db'
+  tmp: `/tmp/fix-flume-db-${rand}`
 }
 
 const a = createDb(paths.db)
