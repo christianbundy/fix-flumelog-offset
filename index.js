@@ -39,7 +39,7 @@ const createDb = (file) =>
     }
   }))
 
-const rand = crypto.randomByte(32).toString('hex')
+const rand = crypto.randomBytes(32).toString('hex')
 const paths = {
   db: config.path,
   tmp: `/tmp/fix-flume-db-${rand}`
